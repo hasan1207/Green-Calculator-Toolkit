@@ -492,7 +492,7 @@ async function generatePDF() {
   document.body.appendChild(reportDiv);
 
   const canvas = await html2canvas(reportDiv, {
-    scale: 3,
+    scale: 2,
     useCORS: true,
     backgroundColor: "#ffffff",
     scrollY: 0,
@@ -500,7 +500,7 @@ async function generatePDF() {
     windowHeight: reportDiv.scrollHeight
   });
 
-  const imgData = canvas.toDataURL("image/png");
+  const imgData = canvas.toDataURL("image/jpeg");
 
   const pdf = new jspdf.jsPDF("p", "mm", "a4");
   const pageWidth = pdf.internal.pageSize.getWidth();
@@ -517,7 +517,7 @@ async function generatePDF() {
   const xOffset = (pageWidth - finalWidth) / 2;
   const yOffset = (pageHeight - finalHeight) / 2;
 
-  pdf.addImage(imgData, "PNG", xOffset, yOffset, finalWidth, finalHeight);
+  pdf.addImage(imgData, "JPEG", xOffset, yOffset, finalWidth, finalHeight);
   pdf.save("GreenCalculatorReport.pdf");
 
   reportDiv.remove();
