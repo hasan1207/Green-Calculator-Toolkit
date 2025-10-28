@@ -37,30 +37,6 @@ let areaUnit = "m2";
     });
 
 
-// ---- Update Chart Function ----
-// function updateChart(co2, air, stormwater) {
-//   const ctx = document.getElementById('impactChart').getContext('2d');
-
-//   const data = {
-//     labels: ['CO₂ (kg)', 'Air Quality (kg PM2.5)', 'Stormwater (L)'],
-//     datasets: [{
-//       label: 'Annual Impact',
-//       data: [co2, air, stormwater],
-//       backgroundColor: ['#198754aa', '#0d6efdaa', '#20c997aa'],
-//       borderColor: ['#198754', '#0d6efd', '#20c997'],
-//       borderWidth: 2
-//     }]
-//   };
-
-//   if (chart) {
-//     chart.destroy();
-//   }
-
-//   chart = new Chart(ctx, {
-//     type: 'bar',
-//     data: data
-//   });
-// }
 
 const radioButtons = document.querySelectorAll('input[name="btnradio"]');
 let selectedUnit = "m2";
@@ -201,12 +177,7 @@ function calculate() {
   formatMetricValues((area * 100).toFixed(0).toLocaleString(), "stormwater");
   formatMetricValues(Math.log(trees + species + duration || 1).toFixed(2), "branding");
 
-  // Update chart
-  // updateChart(
-  //   trees * 21.8,
-  //   trees * 0.12,
-  //   area * 100
-  // );
+
 }
 
 
