@@ -215,6 +215,7 @@ async function generatePDF() {
   doc.querySelector("#airCell > span > span").textContent = data.air;
   doc.querySelector("#stormCell > span > span").textContent = data.stormwater;
   doc.querySelector("#scoreCell > span > span").textContent = data.branding;
+  doc.querySelector(".score-table tr:nth-child(2) td").textContent = data.branding;
 
   
 
