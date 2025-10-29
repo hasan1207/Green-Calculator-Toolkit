@@ -208,7 +208,6 @@ body {
   font-size: 0.8rem;
   display: none;
   z-index: 10;
-  /* optional shadow */
   --box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.40);
   text-align: justify;
@@ -471,15 +470,6 @@ input[type="range"]::-moz-range-track {
 }
 
 
-
-
-
-
-
-
-/* body {
-    font-family: Arial, sans-serif;
-  } */
   
     #report {
       --width: 9.27in;
@@ -501,28 +491,14 @@ input[type="range"]::-moz-range-track {
       border: none !important;
     }
 
-    /* table.master {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    table.master > tbody > tr {
-      border: 1px solid #bbb;
-    }
-    table.master td {
-      vertical-align: top;
-      padding: 4px;
+     h3 {
+      margin: 0 0 4px 0;
+      font-size: 12pt;
+      --border-top: 1px solid #ddd;
+      --padding-bottom: 2px;
     }
 
-    table.subtable {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 11pt;
-    }
-    table.subtable th,
-    table.subtable td {
-      border: 1px solid #aaa;
-      padding: 3px 6px;
-    } */
+   
 
     #report-date{
       font-size: 10pt;
@@ -539,207 +515,6 @@ input[type="range"]::-moz-range-track {
 
     .first-line h3 {
       border-bottom: none !important;
-    }
-
-    .report-overview-table tr:nth-child(1) th, .results-table tr:nth-child(1) th, .metrics-table tr:nth-child(1) th, .score-table tr:nth-child(1) th, .step-table tr:nth-child(1) th {
-      padding: 7px 0;
-      font-size: 18px;
-      background-color: #0d919d;
-      color: white;
-
-    }
-
-     .results-table tr:nth-child(1) th, .metrics-table tr:nth-child(1) th {
-      background-color: #5fab60;
-     }
-
-     
-
-     .metrics-table tr:nth-child(2) th:nth-child(1), .metrics-table tr:nth-child(2) th:nth-child(2), .metrics-table tr:nth-child(2) th:nth-child(3), .metrics-table tr:nth-child(2) th:nth-child(4){
-      background-color: #A8DCA8;
-      text-align: left;
-      font-size: 13px;
-      padding: 5px;
-     }
-
-     .metrics-table tr:nth-child(3) th, .metrics-table tr:nth-child(4) th, .metrics-table tr:nth-child(5) th, .metrics-table tr:nth-child(6) th, .metrics-table tr:nth-child(7) th, .metrics-table tr:nth-child(8) th{
-      background-color: #A8DCA8;
-      text-align: left;
-      font-size: 13px;
-      padding: 5px;
-     }
-
-     
-
-     
-
-     .results-table tr:nth-child(2) td {
-      border-bottom: 1px solid #82C483;
-     }
-
-     .results-table div span:nth-child(1), .results-table div > span:nth-child(1) {
-      font-size: 16px;
-      font-weight: 600;
-     }
-
-     /* #bioCell > span:nth-child(1) {
-      font-size: 16px;
-      font-weight: 600;
-     } */
-
-     .metrics-table tr:nth-child(2) th:nth-child(1), .metrics-table tr:nth-child(3) th:nth-child(1), .metrics-table tr:nth-child(4) th:nth-child(1), .metrics-table tr:nth-child(5) th:nth-child(1), .metrics-table tr:nth-child(6) th:nth-child(1), .metrics-table tr:nth-child(7) th:nth-child(1), .metrics-table tr:nth-child(8) th:nth-child(1) {
-      border-right: 1px solid #82C483;
-     }
-
-     .metrics-table tr:nth-child(2) th:nth-child(1), .metrics-table tr:nth-child(2) th:nth-child(2), 
-     .metrics-table tr:nth-child(3) th:nth-child(1), .metrics-table tr:nth-child(3) td,
-     .metrics-table tr:nth-child(4) th:nth-child(1), .metrics-table tr:nth-child(4) td,
-     .metrics-table tr:nth-child(5) th:nth-child(1), .metrics-table tr:nth-child(5) td,
-     .metrics-table tr:nth-child(6) th:nth-child(1), .metrics-table tr:nth-child(6) td,
-     .metrics-table tr:nth-child(7) th:nth-child(1), .metrics-table tr:nth-child(7) td{
-      border-bottom: 1px solid #82C483;
-     }
-
-     .metrics-table tr:nth-child(3) td, .metrics-table tr:nth-child(4) td, .metrics-table tr:nth-child(5) td, .metrics-table tr:nth-child(6) td, .metrics-table tr:nth-child(7) td, .metrics-table tr:nth-child(8) td {
-      background-color: #EAF9EA;
-      padding: 5px;
-     }
-
-     
-
-     
-    
-
-     .report-overview-table tr:nth-child(2) th:nth-child(1), .report-overview-table tr:nth-child(3) th:nth-child(1), .report-overview-table tr:nth-child(4) th:nth-child(1), .report-overview-table tr:nth-child(5) th:nth-child(1), .report-overview-table tr:nth-child(2) td:nth-child(1), .report-overview-table tr:nth-child(3) td:nth-child(1), .report-overview-table tr:nth-child(4) td:nth-child(1), .report-overview-table tr:nth-child(5) td:nth-child(1) {
-      border-right: 1px solid #4DBBC5;
-     }
-
-     .report-overview-table th, .report-overview-table td{
-      padding: 4px;
-     }
-
-     .report-overview-table tr:nth-child(3) td {
-      border-bottom: 1px solid #4DBBC5;
-     }
-
-
-     .results-table, .report-overview-table, .metrics-table, .score-table, .step-table {
-      border-collapse: collapse;
-      border: none;
-      border-spacing: 0;
-     }
-
-     .results-table tr:nth-child(2), .results-table tr:nth-child(3) {
-      background-color: #EAF9EA;
-     }
-
-     .results-table tr:nth-child(2) td:nth-child(1), .results-table tr:nth-child(2) td:nth-child(2) , .results-table tr:nth-child(3) td:nth-child(1), .results-table tr:nth-child(3) td:nth-child(2) {
-      border-right: 1px solid #82C483;
-     }
-
-
-     
-
-
-    .report-overview-table tr:nth-child(2) th, .report-overview-table tr:nth-child(4) th {
-      background-color: #7ED4DB;
-      padding: 5px;
-    }
-
-    .report-overview-table tr:nth-child(3) td, .report-overview-table tr:nth-child(5) td {
-      background-color: #E5FAFB;
-      --padding: 5px;
-    }
-
-
-    .report-overview-table th, .report-overview-table td{
-      text-align: center;
-    }
-
-    .score-table tr:nth-child(1) th, .step-table tr:nth-child(1) th {
-      background-color: #e06e3f;
-
-    }
-
-
-
-    .score-table {
-      width: 100%;
-      table-layout: fixed;
-    }
-    .score-table th, .score-table td {
-      text-align: center;
-    }
-
-
-
-    .equal-cols {
-      width: 100%;
-      table-layout: fixed;
-    }
-
-    .equal-cols th,
-    .equal-cols td {
-      width: 50%;
-      
-    }
-
-    .results-table div{
-      display: flex;
-      flex-direction: column;
-      --gap: 5px;
-      align-items: center;
-    }
-
-    .metrics-table th, .metrics-table td{
-      text-align: center;
-    }
-
-    .metrics-table td:nth-child(2) {
-      font-size: 13px;
-      text-align: justify;
-      hyphens: auto;
-    }
-
-    th {
-      background: #f0f0f0;
-      text-align: left;
-    }
-
-    .results-table div {
-      margin: 7px;
-      gap: 5px;
-    }
-
-    .results-table span {
-      font-size: 15px;
-    }
-    
-    .score-table tr:nth-child(2) td {
-      background-color: #FCE3D5;
-      --padding: 5px;
-      padding: 3px;
-      font-size: 24px;
-      font-weight: bold;
-      
-    }
-
-    .step-table tr:nth-child(2) td{
-      background-color: #FCE3D5;
-      padding: 5px;
-    }
-
-
-
-    h3 {
-      margin: 0 0 4px 0;
-      font-size: 12pt;
-      --border-top: 1px solid #ddd;
-      --padding-bottom: 2px;
-    }
-
-    #printBtn {
-      --margin-top: 10px;
     }
 
     .logo{
@@ -760,3 +535,178 @@ input[type="range"]::-moz-range-track {
     .row-1 h2{
       width: 75%;
     }
+
+    .equal-cols {
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    .equal-cols th,
+    .equal-cols td {
+      width: 50%;
+      
+    }
+
+    .report-overview-table tr:nth-child(1) th, .results-table tr:nth-child(1) th, .metrics-table tr:nth-child(1) th, .score-table tr:nth-child(1) th, .step-table tr:nth-child(1) th {
+      padding: 7px 0;
+      font-size: 18px;
+      background-color: #0d919d;
+      color: white;
+
+    }
+
+
+     .report-overview-table tr:nth-child(2) th:nth-child(1), .report-overview-table tr:nth-child(3) th:nth-child(1), .report-overview-table tr:nth-child(4) th:nth-child(1), .report-overview-table tr:nth-child(5) th:nth-child(1), .report-overview-table tr:nth-child(2) td:nth-child(1), .report-overview-table tr:nth-child(3) td:nth-child(1), .report-overview-table tr:nth-child(4) td:nth-child(1), .report-overview-table tr:nth-child(5) td:nth-child(1) {
+      border-right: 1px solid #4DBBC5;
+     }
+
+     .report-overview-table th, .report-overview-table td{
+      padding: 4px;
+     }
+
+     .report-overview-table tr:nth-child(3) td {
+      border-bottom: 1px solid #4DBBC5;
+     }
+
+     .report-overview-table tr:nth-child(2) th, .report-overview-table tr:nth-child(4) th {
+      background-color: #7ED4DB;
+      padding: 5px;
+    }
+
+    .report-overview-table tr:nth-child(3) td, .report-overview-table tr:nth-child(5) td {
+      background-color: #E5FAFB;
+      --padding: 5px;
+    }
+
+
+    .report-overview-table th, .report-overview-table td{
+      text-align: center;
+    }
+
+
+     .results-table tr:nth-child(1) th, .metrics-table tr:nth-child(1) th {
+      background-color: #5fab60;
+     }
+
+     .results-table tr:nth-child(2) td {
+      border-bottom: 1px solid #82C483;
+     }
+
+     .results-table div span:nth-child(1), .results-table div > span:nth-child(1) {
+      font-size: 16px;
+      font-weight: 600;
+     }
+
+     .results-table, .report-overview-table, .metrics-table, .score-table, .step-table {
+      border-collapse: collapse;
+      border: none;
+      border-spacing: 0;
+     }
+
+     .results-table tr:nth-child(2), .results-table tr:nth-child(3) {
+      background-color: #EAF9EA;
+     }
+
+     .results-table tr:nth-child(2) td:nth-child(1), .results-table tr:nth-child(2) td:nth-child(2) , .results-table tr:nth-child(3) td:nth-child(1), .results-table tr:nth-child(3) td:nth-child(2) {
+      border-right: 1px solid #82C483;
+     }
+
+     .results-table div{
+      display: flex;
+      flex-direction: column;
+      --gap: 5px;
+      align-items: center;
+    }
+
+     th {
+      background: #f0f0f0;
+      text-align: left;
+    }
+
+    .results-table div {
+      margin: 7px;
+      gap: 5px;
+    }
+
+    .results-table span {
+      font-size: 15px;
+    }
+     
+
+     .metrics-table tr:nth-child(2) th:nth-child(1), .metrics-table tr:nth-child(2) th:nth-child(2), .metrics-table tr:nth-child(2) th:nth-child(3), .metrics-table tr:nth-child(2) th:nth-child(4){
+      background-color: #A8DCA8;
+      text-align: left;
+      font-size: 13px;
+      padding: 5px;
+     }
+
+     .metrics-table tr:nth-child(3) th, .metrics-table tr:nth-child(4) th, .metrics-table tr:nth-child(5) th, .metrics-table tr:nth-child(6) th, .metrics-table tr:nth-child(7) th, .metrics-table tr:nth-child(8) th{
+      background-color: #A8DCA8;
+      text-align: left;
+      font-size: 13px;
+      padding: 5px;
+      padding-top: 1px;
+     }
+
+     
+
+     .metrics-table tr:nth-child(2) th:nth-child(1), .metrics-table tr:nth-child(3) th:nth-child(1), .metrics-table tr:nth-child(4) th:nth-child(1), .metrics-table tr:nth-child(5) th:nth-child(1), .metrics-table tr:nth-child(6) th:nth-child(1), .metrics-table tr:nth-child(7) th:nth-child(1), .metrics-table tr:nth-child(8) th:nth-child(1) {
+      border-right: 1px solid #82C483;
+     }
+
+     .metrics-table tr:nth-child(2) th:nth-child(1), .metrics-table tr:nth-child(2) th:nth-child(2), 
+     .metrics-table tr:nth-child(3) th:nth-child(1), .metrics-table tr:nth-child(3) td,
+     .metrics-table tr:nth-child(4) th:nth-child(1), .metrics-table tr:nth-child(4) td,
+     .metrics-table tr:nth-child(5) th:nth-child(1), .metrics-table tr:nth-child(5) td,
+     .metrics-table tr:nth-child(6) th:nth-child(1), .metrics-table tr:nth-child(6) td,
+     .metrics-table tr:nth-child(7) th:nth-child(1), .metrics-table tr:nth-child(7) td{
+      border-bottom: 1px solid #82C483;
+     }
+
+     .metrics-table tr:nth-child(3) td, .metrics-table tr:nth-child(4) td, .metrics-table tr:nth-child(5) td, .metrics-table tr:nth-child(6) td, .metrics-table tr:nth-child(7) td, .metrics-table tr:nth-child(8) td {
+      background-color: #EAF9EA;
+      padding: 5px;
+      padding-top: 1px;
+     }
+     
+
+    .metrics-table th, .metrics-table td{
+      text-align: center;
+    }
+
+    .metrics-table td:nth-child(2) {
+      font-size: 13px;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .score-table tr:nth-child(1) th, .step-table tr:nth-child(1) th {
+      background-color: #e06e3f;
+
+    }
+
+    .score-table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    .score-table th, .score-table td {
+      text-align: center;
+    }
+    
+    .score-table tr:nth-child(2) td {
+      background-color: #FCE3D5;
+      --padding: 5px;
+      padding: 3px;
+      font-size: 24px;
+      font-weight: bold;
+      
+    }
+
+    .step-table tr:nth-child(2) td{
+      background-color: #FCE3D5;
+      padding: 5px;
+    }
+
+
+
+    

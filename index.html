@@ -36,7 +36,7 @@
       <div class="form-group">
         <div class="title-row">
           <label for="trees">Number of Trees</label>
-          <input type="number" id="trees" class="form-control w-auto" value="100" min="0" oninput="validateNonNegative(this); syncSlider('trees','treesRange')" onblur="restoreIfEmpty(this)">
+          <input type="number" id="trees" class="form-control w-auto" value="100" min="0" oninput="validateNonNegative(this); syncSlider('trees','treesRange')">
         </div> <div class="input-row">
         
 
@@ -48,7 +48,7 @@
       <div class="form-group">
         <div class="title-row">
           <label for="species">Number of Species</label>
-          <input type="number" id="species" class="form-control w-auto" value="5" min="0" oninput="validateNonNegative(this); syncSlider('species','speciesRange')" onblur="restoreIfEmpty(this)">
+          <input type="number" id="species" class="form-control w-auto" value="5" min="0" oninput="validateNonNegative(this); syncSlider('species','speciesRange')">
         </div>
         <div class="input-row">
           <input type="range" id="speciesRange" class="--form-range" min="0" max="200" value="5" oninput="validateNonNegative(this); syncInput('species','speciesRange')">
@@ -69,7 +69,7 @@
               <label class="btn unit-btn" for="btnradio2">ac</label>
             </div>
             <div class="number-with-unit">
-              <input type="number" id="area" class="form-control w-auto" value="500" min="0" oninput="validateNonNegative(this); syncSlider('area','areaRange')" onblur="restoreIfEmpty(this)">
+              <input type="number" id="area" class="form-control w-auto" value="500" min="0" oninput="validateNonNegative(this); syncSlider('area','areaRange')">
               <span id="areaUnit">m²</span>
             </div>
           </div>
@@ -83,7 +83,7 @@
         <div class="title-row">
           <label for="duration">Project Duration</label>
           <div class="number-with-unit">
-            <input type="number" id="duration" class="form-control w-auto" value="2" min="0" oninput="validateNonNegative(this); syncSlider('duration','durationRange')" onblur="restoreIfEmpty(this)">
+            <input type="number" id="duration" class="form-control w-auto" value="2" min="0" oninput="validateNonNegative(this); syncSlider('duration','durationRange')">
             <span>yr</span>
           </div>
         </div>
